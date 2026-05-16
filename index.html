@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caio Emanuel Silva | IT Support Specialist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); }
+        .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        
+        /* Custom styles for AI section */
+        .ai-glow { box-shadow: 0 0 15px rgba(59, 130, 246, 0.4); }
+        .loading-dots:after {
+            content: '.';
+            animation: dots 1.5s steps(5, end) infinite;
+        }
+        @keyframes dots {
+            0%, 20% { content: '.'; }
+            40% { content: '..'; }
+            60% { content: '...'; }
+            80%, 100% { content: ''; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Hero Section -->
+    <header class="gradient-bg text-white py-16 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-2">Caio Emanuel Silva</h1>
+            <p class="text-xl text-blue-300 font-light mb-6">Especialista em Suporte de TI | Help Desk | Técnico em Informática</p>
+            <div class="flex flex-wrap justify-center gap-4 text-sm">
+                <span class="flex items-center gap-2"><i class="fas fa-location-dot"></i> Santo André, SP</span>
+                <span class="flex items-center gap-2"><i class="fas fa-phone"></i> (11) 95862-6892</span>
+                <a href="mailto:caio.emnl.silva@gmail.com" class="flex items-center gap-2 hover:text-blue-200 transition"><i class="fas fa-envelope"></i> caio.emnl.silva@gmail.com</a>
+                <a href="https://linkedin.com/in/cesilva00702" target="_blank" class="flex items-center gap-2 hover:text-blue-200 transition"><i class="fab fa-linkedin"></i> linkedin.com/in/cesilva00702</a>
+                <a href="https://caioemanuelsilva.github.io" target="_blank" class="flex items-center gap-2 hover:text-blue-200 transition"><i class="fas fa-globe"></i> caioemanuelsilva.github.io</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto py-12 px-4 space-y-12">
+        
+        <!-- Sobre Mim -->
+        <section id="about">
+            <h2 class="text-2xl font-bold border-b-2 border-blue-600 inline-block mb-6">Sobre Mim</h2>
+            <p id="bio-content" class="text-lg leading-relaxed text-gray-600">
+                Proficiente no suporte técnico em ambientes Windows e na manutenção de hardware, possuo experiência prática no gerenciamento de chamados e na administração de usuários via Office 365. Tenho sólida compreensão de conceitos básicos de redes de computadores, o que me permite diagnosticar e solucionar problemas de conectividade com agilidade. Minha abordagem combina uma comunicação clara e empática com metodologias estruturadas de troubleshooting.
+            </p>
+        </section>
+
+        <!-- Hard Skills -->
+        <section>
+            <h2 class="text-2xl font-bold border-b-2 border-blue-600 inline-block mb-6">Habilidades Técnicas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 card-hover">
+                    <i class="fas fa-desktop text-blue-600 text-2xl mb-4"></i>
+                    <h3 class="font-bold mb-2">Sistemas & Hardware</h3>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>Windows 10/11 & Server</li>
+                        <li>Montagem e Manutenção</li>
+                        <li>Instalação de Softwares</li>
+                        <li>Eletroeletrônica básica</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 card-hover">
+                    <i class="fas fa-network-wired text-blue-600 text-2xl mb-4"></i>
+                    <h3 class="font-bold mb-2">Redes & Cloud</h3>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>Fundamentos de Redes (TCP/IP)</li>
+                        <li>Wi-Fi & Cabeamento</li>
+                        <li>Administração Office 365</li>
+                        <li>Gestão de Backups</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 card-hover">
+                    <i class="fas fa-ticket-alt text-blue-600 text-2xl mb-4"></i>
+                    <h3 class="font-bold mb-2">Suporte & Gestão</h3>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>Atendimento Help Desk (N1/N2)</li>
+                        <li>Sistemas de Chamados (Ticketing)</li>
+                        <li>Análise de Dados (Excel)</li>
+                        <li>SLA e Métricas de Sucesso</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiência Profissional -->
+        <section id="experience">
+            <h2 class="text-2xl font-bold border-b-2 border-blue-600 inline-block mb-8">Experiência Profissional</h2>
+            
+            <div class="space-y-8">
+                <!-- Lorac -->
+                <div class="relative pl-8 border-l-2 border-gray-200">
+                    <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-[9px] top-1"></div>
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <h3 class="font-bold text-xl">Estagiário de TI</h3>
+                            <p class="text-blue-600 font-medium">Lorac Informática</p>
+                        </div>
+                        <span class="text-sm text-gray-400">2023 – 2024</span>
+                    </div>
+                    <ul class="list-disc ml-5 text-gray-600 space-y-2">
+                        <li>Prestei suporte técnico de Help Desk para mais de 30 usuários internos, resolvendo incidentes de hardware e software.</li>
+                        <li>Instalei e configurei sistemas operacionais (Windows 10/11) em novas estações de trabalho, reduzindo o tempo de setup de máquinas.</li>
+                        <li>Colaborei na documentação de processos e gestão de backups para garantir a segurança dos dados.</li>
+                    </ul>
+                </div>
+
+                <!-- Atento -->
+                <div class="relative pl-8 border-l-2 border-gray-200">
+                    <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-[9px] top-1"></div>
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <h3 class="font-bold text-xl">Especialista em Operações de Atendimento</h3>
+                            <p class="text-blue-600 font-medium">Atento Brasil S/A</p>
+                        </div>
+                        <span class="text-sm text-gray-400">2024 – 2024</span>
+                    </div>
+                    <ul class="list-disc ml-5 text-gray-600 space-y-2">
+                        <li>Gerenciei e solucionei chamados escalonados de alta complexidade, mantendo altos índices de satisfação via troubleshooting estruturado.</li>
+                        <li>Monitorei indicadores de performance (KPIs e SLAs), identificando melhorias que otimizaram o tempo de resposta da equipe.</li>
+                    </ul>
+                </div>
+
+                <!-- Americanas -->
+                <div class="relative pl-8 border-l-2 border-gray-200">
+                    <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-[9px] top-1"></div>
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <h3 class="font-bold text-xl">Auxiliar de Loja / Operador de Caixa</h3>
+                            <p class="text-blue-600 font-medium">Americanas S.A.</p>
+                        </div>
+                        <span class="text-sm text-gray-400">2025 – 2025</span>
+                    </div>
+                    <ul class="list-disc ml-5 text-gray-600 space-y-2">
+                        <li>Operei terminais de caixa eletrônico processando mais de 80 transações diárias com 100% de precisão nos fechamentos.</li>
+                        <li>Realizei o controle de inventário utilizando Excel para análise de dados, reduzindo a ruptura de estoque de produtos críticos.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Educação -->
+        <section>
+            <h2 class="text-2xl font-bold border-b-2 border-blue-600 inline-block mb-6">Formação Acadêmica</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="p-4 bg-white rounded-lg shadow-sm border-l-4 border-blue-600">
+                    <h4 class="font-bold">Informática para Negócios</h4>
+                    <p class="text-sm text-gray-500">Ensino Superior (Interrompido)</p>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow-sm border-l-4 border-gray-300">
+                    <h4 class="font-bold">Técnico em Informática</h4>
+                    <p class="text-sm text-gray-500">Concluído</p>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow-sm border-l-4 border-gray-300">
+                    <h4 class="font-bold">Técnico em Eletroeletrônica</h4>
+                    <p class="text-sm text-gray-500">Concluído</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gemini AI Section ✨ -->
+        <section class="bg-blue-50 p-8 rounded-2xl border border-blue-100 ai-glow">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="bg-blue-600 p-2 rounded-lg text-white">
+                    <i class="fas fa-wand-magic-sparkles"></i>
+                </div>
+                <h2 class="text-2xl font-bold">Central de Inteligência Profissional</h2>
+            </div>
+            
+            <p class="text-gray-600 mb-6 italic">Use a IA para analisar o fit do Caio com a sua vaga ou gerar uma carta de apresentação personalizada.</p>
+
+            <div class="space-y-4">
+                <textarea 
+                    id="ai-input" 
+                    rows="4" 
+                    placeholder="Cole aqui a descrição da vaga ou peça algo como: 'Gere uma carta de apresentação para Analista de Suporte Júnior'" 
+                    class="w-full p-4 rounded-xl border border-blue-200 focus:ring-2 focus:ring-blue-400 focus:outline-none text-sm"
+                ></textarea>
+                
+                <div class="flex flex-wrap gap-3">
+                    <button 
+                        onclick="callGemini('analyze')" 
+                        class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold text-sm transition-all flex items-center gap-2"
+                    >
+                        <span>✨ Analisar Fit com a Vaga</span>
+                    </button>
+                    <button 
+                        onclick="callGemini('letter')" 
+                        class="bg-white border border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-2 rounded-lg font-semibold text-sm transition-all flex items-center gap-2"
+                    >
+                        <span>✨ Gerar Carta de Apresentação</span>
+                    </button>
+                </div>
+
+                <!-- Result Display -->
+                <div id="ai-result-container" class="hidden mt-6 bg-white p-6 rounded-xl border border-blue-100 shadow-inner">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-xs font-bold uppercase tracking-wider text-blue-500">Resultado da IA</span>
+                        <button onclick="copyAiResult()" class="text-gray-400 hover:text-blue-600 text-sm">
+                            <i class="fas fa-copy"></i> Copiar
+                        </button>
+                    </div>
+                    <div id="ai-loading" class="hidden text-center py-8">
+                        <span class="loading-dots text-blue-600 font-medium">Processando com Gemini</span>
+                    </div>
+                    <div id="ai-response" class="text-gray-700 text-sm leading-relaxed whitespace-pre-wrap"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-100 py-8 mt-12">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <p class="text-gray-500 mb-4">Interessado em colaborar ou contratar?</p>
+            <a href="mailto:caio.emnl.silva@gmail.com" class="bg-blue-600 text-white px-8 py-3 rounded-full font-bold hover:bg-blue-700 transition">
+                Entre em contato por e-mail
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        const apiKey = ""; // Chave fornecida pelo ambiente
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'caio-portfolio-ai';
+
+        async function callGemini(mode) {
+            const input = document.getElementById('ai-input').value;
+            const container = document.getElementById('ai-result-container');
+            const responseDiv = document.getElementById('ai-response');
+            const loading = document.getElementById('ai-loading');
+
+            if (!input && mode === 'analyze') {
+                alert("Por favor, cole a descrição da vaga para análise.");
+                return;
+            }
+
+            // UI Setup
+            container.classList.remove('hidden');
+            responseDiv.innerText = "";
+            loading.classList.remove('hidden');
+
+            const resumeContext = `
+                Nome: Caio Emanuel Silva
+                Objetivo: Suporte de TI / Help Desk / Entry-Level
+                Educação: Técnico em Informática, Técnico em Eletroeletrônica, Superior em Informática p/ Negócios (em curso).
+                Habilidades: Windows 10/11, Hardware, Redes (TCP/IP), Office 365, Atendimento ao cliente, Excel (Data Analysis).
+                Experiências: 
+                1. Estagiário TI na Lorac: Suporte a 30+ usuários, instalação Windows, backups.
+                2. Especialista Atendimento na Atento: SLA, Troubleshooting, problemas complexos.
+                3. Americanas: Operação de caixa (80+ transações/dia), inventário via Excel.
+            `;
+
+            let systemPrompt = "";
+            if (mode === 'analyze') {
+                systemPrompt = "Você é um recrutador técnico experiente. Analise o currículo do Caio Emanuel Silva contra a descrição da vaga fornecida pelo usuário. Destaque 3 pontos de fit forte e 1 sugestão de como ele pode se destacar na entrevista para essa vaga específica. Seja profissional e direto em português.";
+            } else {
+                systemPrompt = "Você é um assistente de carreira. Escreva uma carta de apresentação profissional e personalizada para o Caio Emanuel Silva baseada na descrição da vaga ou pedido do usuário. Use as experiências reais dele (Lorac, Atento, Americanas). Seja persuasivo e profissional em português.";
+            }
+
+            const payload = {
+                contents: [{ 
+                    parts: [{ text: `Contexto do Currículo: ${resumeContext}\n\nEntrada do Usuário: ${input}` }] 
+                }],
+                systemInstruction: { parts: [{ text: systemPrompt }] }
+            };
+
+            try {
+                const response = await fetchWithRetry(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`, payload);
+                const result = await response.json();
+                const text = result.candidates?.[0]?.content?.parts?.[0]?.text;
+                
+                loading.classList.add('hidden');
+                if (text) {
+                    responseDiv.innerText = text;
+                } else {
+                    responseDiv.innerText = "Desculpe, não consegui processar a resposta. Tente novamente.";
+                }
+            } catch (error) {
+                loading.classList.add('hidden');
+                responseDiv.innerText = "Erro ao conectar com a inteligência artificial. Verifique sua conexão.";
+                console.error(error);
+            }
+        }
+
+        async function fetchWithRetry(url, payload, retries = 5) {
+            for (let i = 0; i < retries; i++) {
+                try {
+                    const response = await fetch(url, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+                    if (response.ok) return response;
+                } catch (e) {
+                    if (i === retries - 1) throw e;
+                }
+                await new Promise(res => setTimeout(res, Math.pow(2, i) * 1000));
+            }
+        }
+
+        function copyAiResult() {
+            const text = document.getElementById('ai-response').innerText;
+            const dummy = document.createElement("textarea");
+            document.body.appendChild(dummy);
+            dummy.value = text;
+            dummy.select();
+            document.execCommand("copy");
+            document.body.removeChild(dummy);
+            alert("Texto copiado para a área de transferência!");
+        }
+    </script>
+</body>
+</html>
